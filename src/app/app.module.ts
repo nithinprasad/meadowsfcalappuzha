@@ -18,6 +18,9 @@ import { TeamsComponent } from './section/teams/teams.component';
 import { BlogComponent } from './section/blog/blog.component';
 import { TestimonialComponent } from './section/testimonial/testimonial.component';
 import { FooterComponent } from './section/footer/footer.component';
+import { OwnersComponent } from './section/owners/owners.component';
+import { SocialImageComponent } from './shared/social-image/social-image.component';
+import { OfficialsComponent } from './section/officials/officials.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBUs38p2ZwjaKJ0lk11G_2vyzsWe8plBDY",
@@ -45,7 +48,10 @@ const analytics = getAnalytics(app);
     TeamsComponent,
     BlogComponent,
     TestimonialComponent,
-    FooterComponent
+    FooterComponent,
+    OwnersComponent,
+    SocialImageComponent,
+    OfficialsComponent
   ],
   imports: [
     BrowserModule,

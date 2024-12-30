@@ -1,0 +1,34 @@
+<div class="guide-img">
+    <img
+        [src]="getImage(social?.imagepath)"
+        class="img-fluid  img-responsive w-100 rounded-top"
+        alt="Image"
+    >
+
+    <div class="guide-icon rounded-pill p-2">
+        <a
+            class="btn btn-square btn-primary rounded-circle mx-1"
+            href={{social?.facebook}}
+        >
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+            class="btn btn-square btn-primary rounded-circle mx-1"
+            href={{social?.twitter}}
+        >
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a
+            class="btn btn-square btn-primary rounded-circle mx-1"
+            href={{social?.instagram}}
+        >
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a
+            class="btn btn-square btn-primary rounded-circle mx-1"
+            href={{social?.linkedin}}
+        >
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+</div>

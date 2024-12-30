@@ -1,0 +1,30 @@
+<div class="container-fluid guide py-5">
+    <div class="container py-5">
+        <div
+            class="mx-auto text-center mb-5"
+            style="max-width: 900px;"
+        >
+            <h5 class="section-title px-3">Core Members</h5>
+            <h1 class="mb-0">Meet Our Representatives</h1>
+        </div>
+        <div class="row g-4">
+            <div
+                class="col-md-6 col-lg-4"
+                *ngFor="let item of getOwners()"
+            >
+                <div class="guide-item">
+                    <app-social-image
+                        [social]=item.social
+                        [name]=item.name
+                    ></app-social-image>
+                    <div class="guide-title text-center rounded-bottom p-4">
+                        <div class="guide-title-inner">
+                            <h4 class="mt-3">{{item.name}}</h4>
+                            <p class="mb-0">{{item.designation}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
