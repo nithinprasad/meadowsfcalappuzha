@@ -21,6 +21,10 @@ import { FooterComponent } from './section/footer/footer.component';
 import { OwnersComponent } from './section/owners/owners.component';
 import { SocialImageComponent } from './shared/social-image/social-image.component';
 import { OfficialsComponent } from './section/officials/officials.component';
+import { PlayersComponent } from './section/players/players.component';
+import { PlayerCardComponent } from './shared/player-card/player-card.component';
+import { FifaCardComponent } from './shared/fifa-card/fifa-card.component';
+import { SponsersComponent } from './section/sponsers/sponsers.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBUs38p2ZwjaKJ0lk11G_2vyzsWe8plBDY",
@@ -51,7 +55,11 @@ const analytics = getAnalytics(app);
     FooterComponent,
     OwnersComponent,
     SocialImageComponent,
-    OfficialsComponent
+    OfficialsComponent,
+    PlayersComponent,
+    PlayerCardComponent,
+    FifaCardComponent,
+    SponsersComponent
   ],
   imports: [
     BrowserModule,

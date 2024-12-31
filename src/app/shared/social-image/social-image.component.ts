@@ -25,7 +25,6 @@ export class SocialImageComponent implements OnInit {
 
   checkImageExists(imagePath: string | undefined) {
     if (imagePath) {
-     this.imageExists = true;
     const img = new Image();
     img.onload = () => {
       this.imageExists = true;
@@ -33,6 +32,7 @@ export class SocialImageComponent implements OnInit {
     img.onerror = () => {
       this.imageExists = false;
     };
+      this.imageExists = true;
     img.src = imagePath;
   } else {
     this.imageExists = false;

@@ -1,0 +1,17 @@
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <app-fifa-card [player]=player></app-fifa-card>
+        </div>
+        <div class="flip-card-back">
+            <div class="guide-item">
+                <app-social-image [social]=player.social></app-social-image>
+                <div class="guide-title text-center rounded-bottom p-4">
+                    <div class="guide-title-inner">
+                        <h4 class="mt-3">{{player.name}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

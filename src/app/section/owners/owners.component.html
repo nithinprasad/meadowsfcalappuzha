@@ -13,10 +13,7 @@
                 *ngFor="let item of getOwners()"
             >
                 <div class="guide-item">
-                    <app-social-image
-                        [social]=item.social
-                        [name]=item.name
-                    ></app-social-image>
+                    <app-social-image [social]=item.social></app-social-image>
                     <div class="guide-title text-center rounded-bottom p-4">
                         <div class="guide-title-inner">
                             <h4 class="mt-3">{{item.name}}</h4>

@@ -6,7 +6,7 @@ export const PLAYER_nithinPrasad: Players = {
   name: 'Nithin Prasad',
   position: [PositionType.Goalkeeper],
   social: {
-    imagepath: 'assets/img/meadows/players/28.jpg',
+    imagepath: 'assets/img/meadows/players/28.png',
     facebook: 'https://facebook.com/nithinprasad',
     linkedin: 'https://linkedin.com/in/nithinprasad',
     instagram: 'https://instagram.com/nithinprasad',

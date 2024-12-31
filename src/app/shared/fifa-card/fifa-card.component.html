@@ -1,0 +1,76 @@
+<div class="fut-player-card">
+    <div class="player-card-top">
+        <div class="player-master-info">
+            <div class="player-rating">
+                <span>{{ player.rating ?? 97 }}</span>
+            </div>
+            <div class="player-position">
+                <span>{{player.position}}</span>
+            </div>
+            <div class="player-nation">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png?20240827082344"
+                    alt="India"
+                    draggable="false"
+                >
+            </div>
+            <div class="player-club">
+                <img
+                    src="assets/img/meadows/logo.jpg"
+                    alt="Meadows"
+                    draggable="false"
+                >
+            </div>
+        </div>
+        <div class="player-picture">
+            <img
+                [src]=getPlayerImage(player)
+                [alt]="player.name"
+                draggable="false"
+            >
+            <div class="player-extra">
+                <span>4*SM</span>
+                <span>4*WF</span>
+            </div>
+        </div>
+    </div>
+    <div class="player-card-bottom">
+        <div class="player-info">
+            <!-- Player Name -->
+            <div class="player-name">
+                <span>{{player.name}}</span>
+            </div>
+            <!-- Player Features -->
+            <div class="player-features">
+                <div class="player-features-col">
+                    <span>
+                        <div class="player-feature-value">97</div>
+                        <div class="player-feature-title">PAC</div>
+                    </span>
+                    <span>
+                        <div class="player-feature-value">95</div>
+                        <div class="player-feature-title">SHO</div>
+                    </span>
+                    <span>
+                        <div class="player-feature-value">94</div>
+                        <div class="player-feature-title">PAS</div>
+                    </span>
+                </div>
+                <div class="player-features-col">
+                    <span>
+                        <div class="player-feature-value">99</div>
+                        <div class="player-feature-title">DRI</div>
+                    </span>
+                    <span>
+                        <div class="player-feature-value">35</div>
+                        <div class="player-feature-title">DEF</div>
+                    </span>
+                    <span>
+                        <div class="player-feature-value">68</div>
+                        <div class="player-feature-title">PHY</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
