@@ -1,0 +1,90 @@
+
+        .schedule-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .match {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid white;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 15px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .match .details {
+            display: flex;
+            align-items: center;
+        }
+
+        .match .details img {
+            height: 60px;
+            margin: 0 10px;
+            mix-blend-mode: multiply;
+            padding-top: 1rem;
+            font-size: smaller;
+        }
+
+        .match .details .team {
+            text-align: center;
+        }
+
+        .match .details .location {
+            margin-left: 20px;
+        }
+
+        .match .details .location span {
+            display: block;
+            font-size: 0.8rem;
+            color: #8a15ce;
+            font-weight: bold;
+        }
+
+        .match .time {
+            text-align: right;
+        }
+
+        .match .time span {
+            display: block;
+            font-size: 1em;
+            font-weight: bold;
+            color: #8a15ce;
+        }
+
+        .home {
+            position: absolute;
+            left: 10px;
+            background-color: red;
+            color: white;
+            font-size: 0.6em;
+            padding: 2px;
+            border-radius: 4px;
+        }
+
+        .team-name {
+            color: rgb(46, 14, 230);
+            font-size: 1em;
+            font-size: small;
+            font-weight: bold;
+        }
+
+        .away {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            background-color: blue;
+            color: white;
+            font-size: 0.8em;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .match-container {
+            position: relative;
+        }

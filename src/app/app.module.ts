@@ -28,6 +28,7 @@ import { SponsersComponent } from './section/sponsers/sponsers.component';
 import { JerseyComponent } from './shared/jersey/jersey.component';
 import { MatchesHomeComponent } from './section/matches-home/matches-home.component';
 import { MatchScoreCardComponent } from './shared/match-score-card/match-score-card.component';
+import { UpcomingMatchComponent } from './shared/upcoming-match/upcoming-match.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBUs38p2ZwjaKJ0lk11G_2vyzsWe8plBDY",
@@ -65,7 +66,8 @@ const analytics = getAnalytics(app);
     SponsersComponent,
     JerseyComponent,
     MatchesHomeComponent,
-    MatchScoreCardComponent
+    MatchScoreCardComponent,
+    UpcomingMatchComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MathchDatasService } from 'src/app/datas/mathch-datas.service';
-import { Match } from '../types/types';
+import { Match, TournamentMatch } from '../types/types';
 
 @Component({
   selector: 'app-matches-home',
@@ -16,6 +16,10 @@ export class MatchesHomeComponent implements OnInit {
 
   getRecentMatch(): Match {
     return this.matchService.getMatches()[0];
+  }
+
+   getUpComingMatch(): (Match | TournamentMatch)[] {
+    return this.matchService.getUpcomingMatches();
   }
 
 }

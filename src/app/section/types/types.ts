@@ -82,7 +82,8 @@ export interface Match {
     matchType: MatchType,
     location: MatchLocation,
     matchTime: MatchTime,
-    matchDuration: number
+    matchDuration: number,
+     tournament?: Tournament
 }
 
 export interface MatchTime{
@@ -93,7 +94,7 @@ export interface MatchTime{
 }
 
 export interface TournamentMatch extends Match {
-   tournament: Tournament
+  
 }
 
 export interface Tournament{
@@ -108,7 +109,8 @@ export enum MatchType {
 
 export enum MatchLocation {
     "U.S.A" = "U.S.A",
-    "LEES" =  "LEES",
+    "LEES" = "LEES",
+    "ABHUDHABI" = "ABHUDHABI",
     "NEUTRAL VENUE" =  "NEUTRAL VENUE"
 }
 

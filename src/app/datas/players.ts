@@ -45,13 +45,13 @@ export const PLAYER_jeevanRose: Players = {
   name: 'Jeevan Rose',
   position: [PositionType.Midfielder],
   social: {
-   
+    imagepath: 'assets/img/meadows/players/11.png',
     facebook: 'https://facebook.com/jeevanrose',
     linkedin: 'https://linkedin.com/in/jeevanrose',
     instagram: 'https://instagram.com/jeevanrose',
     twitter: 'https://twitter.com/jeevanrose',
   },
-  jerseyNumber: 22
+  jerseyNumber: 11
 };
 
 export const PLAYER_jeevan: Players = {

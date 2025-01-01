@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HomeTeam, Match, MatchLocation, MatchType } from '../section/types/types';
-import { FC_MEADOWS, FC_WE_ONE } from './teams';
+import { HomeTeam, Match, MatchLocation, MatchType, TournamentMatch } from '../section/types/types';
+import { FC_MEADOWS, FC_WE_ONE, TO_BE_CONFIRMED } from './teams';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ export class MathchDatasService {
 
   constructor() { }
 
-  getMatches(): Match[] { 
+  getMatches(): (Match | TournamentMatch)[] { 
     return [
       {
         awayTeam: FC_WE_ONE,
@@ -30,6 +30,37 @@ export class MathchDatasService {
           month: 12,
           year: 2024,
           hour: "20:00 PM",
+        }
+      }
+    ]
+  }
+
+
+ getUpcomingMatches(): (Match | TournamentMatch)[] { 
+    return [
+      {
+        awayTeam: TO_BE_CONFIRMED,
+        homeTeam: FC_MEADOWS,
+        matchType: MatchType.TOURNAMENT,
+        homeTeamScore: {
+          score: 0,
+          scorer: []
+        },
+        awayTeamScore: {
+          score: 0,
+          scorer: []
+        },
+        location: MatchLocation.ABHUDHABI,
+        matchDuration: 60,
+        matchTime: {
+          day: 2,
+          month: 1,
+          year: 2025,
+          hour: "20:00 PM",
+        },
+        tournament: {
+          name: "MTCIANS ALL KERALA 6's FOOTBALL TOURNAMENT"
+
         }
       }
     ]

@@ -21,3 +21,14 @@ export const FC_WE_ONE: Team = {
     imagepath: "assets/img/meadows/teams/we_one.jpg",
   }
 }
+
+
+export const TO_BE_CONFIRMED: Team = {
+  id: "tbc",
+  name: "TBC",
+  location: "TBC",
+  social: {
+    instagram: "https://www.instagram.com/fc_weone/",
+    imagepath: "assets/img/meadows/teams/tbc.png",
+  }
+}

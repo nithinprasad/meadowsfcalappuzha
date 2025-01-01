@@ -1,0 +1,27 @@
+<!-- Match 1 -->
+<div class="match-container">
+    <div class="home">
+        {{match.tournament?.name ?? match.matchType}}
+    </div>
+    <div class="match">
+        <div class="details">
+            <div class="team">
+                <img
+                    [src]="match.awayTeam.social?.imagepath"
+                    alt="Team 2 Logo"
+                >
+                <div class="team-name">{{match.awayTeam.name}}</div>
+
+            </div>
+            <div class="location">
+                <span>{{match.location}}</span>
+                <span>
+                    {{match.matchTime.day}}/{{match.matchTime.month}}/{{match.matchTime.year}}
+                </span>
+            </div>
+        </div>
+        <div class="time">
+            <span>{{match.matchTime.hour}}</span>
+        </div>
+    </div>
+</div>
