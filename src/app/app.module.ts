@@ -26,6 +26,8 @@ import { PlayerCardComponent } from './shared/player-card/player-card.component'
 import { FifaCardComponent } from './shared/fifa-card/fifa-card.component';
 import { SponsersComponent } from './section/sponsers/sponsers.component';
 import { JerseyComponent } from './shared/jersey/jersey.component';
+import { MatchesHomeComponent } from './section/matches-home/matches-home.component';
+import { MatchScoreCardComponent } from './shared/match-score-card/match-score-card.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBUs38p2ZwjaKJ0lk11G_2vyzsWe8plBDY",
@@ -61,7 +63,9 @@ const analytics = getAnalytics(app);
     PlayerCardComponent,
     FifaCardComponent,
     SponsersComponent,
-    JerseyComponent
+    JerseyComponent,
+    MatchesHomeComponent,
+    MatchScoreCardComponent
   ],
   imports: [
     BrowserModule,

@@ -59,3 +59,66 @@ export function getPlayingTypeByPosition(playingPostion:PlayingPosition) :Positi
             return [PositionType.Striker, PositionType.Winger]
     }
 }
+
+
+export interface Team {
+    id: string
+    name: string;
+    social?: SocialMedia;
+    location: string;
+}
+
+
+
+export interface AwayTeam extends Team { }
+
+export interface HomeTeam extends Team { }
+
+export interface Match {
+    homeTeam: Team,
+    awayTeam: Team,
+    homeTeamScore: Score,
+    awayTeamScore: Score,
+    matchType: MatchType,
+    location: MatchLocation,
+    matchTime: MatchTime,
+    matchDuration: number
+}
+
+export interface MatchTime{
+    day: number,
+    month: number,
+    year: number,
+    hour: string,
+}
+
+export interface TournamentMatch extends Match {
+   tournament: Tournament
+}
+
+export interface Tournament{
+    name: string;
+    social?: SocialMedia;
+}
+
+export enum MatchType {
+    "FRIENDLY" = "FRIENDLY",
+    "TOURNAMENT" = "TOURNAMENT"
+}
+
+export enum MatchLocation {
+    "U.S.A" = "U.S.A",
+    "LEES" =  "LEES",
+    "NEUTRAL VENUE" =  "NEUTRAL VENUE"
+}
+
+export interface Score{
+    score: number,
+    scorer: MatchScorer[]
+}
+ 
+export interface MatchScorer{
+    isOwnGoal? : boolean,
+    scorer: Players,
+    time? : string
+ }
