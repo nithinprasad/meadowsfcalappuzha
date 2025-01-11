@@ -22,6 +22,16 @@ export const FC_WE_ONE: Team = {
   }
 }
 
+export const FC_PEROOR: Team = {
+  id: "_peroor_.fc",
+  name: "Peroor FC",
+  location: "Peroor",
+  social: {
+    instagram: "https://www.instagram.com/_peroor_.fc/",
+    imagepath: "assets/img/meadows/teams/peroorfc.jpg",
+  }
+}
+
 
 export const TO_BE_CONFIRMED: Team = {
   id: "tbc",
