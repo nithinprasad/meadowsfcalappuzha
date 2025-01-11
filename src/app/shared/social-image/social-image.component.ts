@@ -11,7 +11,7 @@ export class SocialImageComponent implements OnInit {
   
  getImage(imagePath: string | undefined): string {
   // This can be used to pass a placeholder or default image for missing image paths.
-  return this.imageExists ? imagePath || '' : 'https://robohash.org/'+this.name+'.png';
+  return this.imageExists ? imagePath || '' : 'assets/img/meadows/players/default.png';
 }
 
   @Input() social?: SocialMedia

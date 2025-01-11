@@ -36,3 +36,14 @@
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+.guide-item {
+  background-image: url("/assets/img/meadows/card/fifa.jpg");
+  background-position: center center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.guide-title-inner {
+  
+}

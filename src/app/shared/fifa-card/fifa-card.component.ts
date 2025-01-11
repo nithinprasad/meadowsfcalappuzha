@@ -16,7 +16,7 @@ export class FifaCardComponent implements OnInit {
   }
 
   getPlayerImage(player: Players) {
-      return player.social?.imagepath ?? 'https://robohash.org/'+player.name+'.png';
+      return player.social?.imagepath ?? 'assets/img/meadows/players/default.png';
   }
 
 }
